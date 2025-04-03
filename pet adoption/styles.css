@@ -1,0 +1,159 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom, #f0f4f8, #d9e8fc);
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #0056b3;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/* Navbar */
+.navbar {
+    background: linear-gradient(to right, #0056b3, #003d99);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .nav-link,
+.navbar .navbar-brand {
+    color: #fff !important;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar .nav-link:hover {
+    color: #ffd700 !important;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Jumbotron */
+.jumbotron {
+    background: linear-gradient(to bottom right, #6a11cb, #2575fc);
+    color: white;
+    padding: 3rem;
+    border-radius: 15px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Cards */
+.card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 5px solid #ffd700;
+}
+
+.card-title {
+    font-weight: 600;
+    color: #003d99;
+}
+
+.card-body {
+    background: #ffffff;
+    padding: 1rem;
+    border-radius: 0 0 15px 15px;
+}
+
+/* Buttons */
+.btn-primary {
+    background: linear-gradient(to right, #0056b3, #003d99);
+    border: none;
+    border-radius: 50px;
+    padding: 10px 20px;
+    color: white;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(to right, #ffd700, #ffcc33);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Forms */
+form {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.form-control {
+    border: 2px solid #d9e8fc;
+    border-radius: 50px;
+    padding: 10px 20px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.form-control:focus {
+    border-color: #0056b3;
+    outline: none;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background: linear-gradient(to right, #0056b3, #003d99);
+    color: white;
+    padding: 1.5rem;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .jumbotron {
+        padding: 2rem;
+    }
+
+    .btn-primary {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .card {
+        margin-bottom: 1.5rem;
+    }
+}
