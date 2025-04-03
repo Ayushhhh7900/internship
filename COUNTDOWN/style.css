@@ -1,0 +1,173 @@
+/* General Styling */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #333;
+    color: white;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    z-index: 1000;
+}
+
+.nav-link {
+    margin: 0 20px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #ff6f61;
+}
+
+.navbar a.active {
+    color: #ff6f61;
+    border-bottom: 2px solid #ff6f61;
+}
+
+/* Sections */
+main {
+    margin-top: 70px; /* Space for fixed navbar */
+}
+
+.home-section, .about-section, .contact-section {
+    padding: 50px;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.home-section {
+    background: #ff6f61;
+    color: white;
+}
+
+/* Home Section Enhancements */
+.home-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.tagline {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    font-style: italic;
+    color: #ffe8e2;
+}
+
+.features-highlight {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.highlight-item {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+    max-width: 250px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    color: white;
+}
+
+.highlight-item h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.cta-container {
+    margin: 30px 0;
+}
+
+.btn-cta {
+    padding: 10px 20px;
+    margin: 10px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.btn-cta:hover {
+    background: #0056b3;
+}
+
+.btn-cta-alt {
+    padding: 10px 20px;
+    margin: 10px;
+    background: #ffffff;
+    color: #007bff;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.btn-cta-alt:hover {
+    background: #007bff;
+    color: white;
+}
+
+/* Timer Section */
+.time-tracker {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.time-box {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    flex: 1;
+    max-width: 120px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.time-value {
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+.time-label {
+    font-size: 1rem;
+}
+
+/* Footer */
+.page-footer {
+    text-align: center;
+    padding: 15px;
+    background: #222;
+    color: white;
+}
+
+.footer-link {
+    color: #00aaff;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}

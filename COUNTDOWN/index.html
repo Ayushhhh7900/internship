@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Launch Countdown</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="home-section">
+            <div class="home-content">
+                <h1 class="headline">Our Big Launch is Almost Here!</h1>
+                <p class="tagline">Experience innovation like never before. Get ready to be amazed!</p>
+                <div class="features-highlight">
+                    <div class="highlight-item">
+                        <h3>🚀 Fast & Secure</h3>
+                        <p>Enjoy lightning-fast performance and top-notch security features.</p>
+                    </div>
+                    <div class="highlight-item">
+                        <h3>🌟 Exclusive Features</h3>
+                        <p>Explore unique tools designed to simplify your experience.</p>
+                    </div>
+                    <div class="highlight-item">
+                        <h3>💼 Business Ready</h3>
+                        <p>Perfect for businesses looking to scale effectively.</p>
+                    </div>
+                </div>
+                <div class="cta-container">
+                    <button class="btn-cta">Learn More</button>
+                    <button class="btn-cta-alt">Subscribe</button>
+                </div>
+                <div class="time-tracker">
+                    <div class="time-box">
+                        <span id="dayCount" class="time-value"></span>
+                        <span class="time-label">Days</span>
+                    </div>
+                    <div class="time-box">
+                        <span id="hourCount" class="time-value"></span>
+                        <span class="time-label">Hours</span>
+                    </div>
+                    <div class="time-box">
+                        <span id="minuteCount" class="time-value"></span>
+                        <span class="time-label">Minutes</span>
+                    </div>
+                    <div class="time-box">
+                        <span id="secondCount" class="time-value"></span>
+                        <span class="time-label">Seconds</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <h2>About Us</h2>
+            <p>We are a passionate team dedicated to bringing innovative solutions to life. Our upcoming launch marks a significant milestone in our journey. Here's what we offer:</p>
+            <div class="features">
+                <div class="feature-item">
+                    <h3>Innovation</h3>
+                    <p>Groundbreaking solutions to everyday problems.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Quality</h3>
+                    <p>We never compromise on excellence.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Support</h3>
+                    <p>Your satisfaction is our priority.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <h2>Contact Us</h2>
+            <p>Have questions or want to collaborate? We'd love to hear from you!</p>
+            <form id="contactForm">
+                <input type="text" class="input-field" placeholder="Your Name" required>
+                <input type="email" class="input-field" placeholder="Your Email" required>
+                <textarea class="input-field" placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit" class="btn-submit">Send Message</button>
+            </form>
+            <div class="contact-details">
+                <p>Email: <a href="mailto:info@launch.com" class="contact-link">info@launch.com</a></p>
+                <p>Phone: <a href="tel:+123456789" class="contact-link">+1 234 567 89</a></p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="page-footer">
+        <p>&copy; 2025 Launch Inc. | <a href="#" class="footer-link">Privacy Policy</a> | <a href="#" class="footer-link">Terms of Service</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
